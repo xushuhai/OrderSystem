@@ -1,0 +1,9 @@
+17-12-21 16:15:41 inster_location.py[line:77] ERROR sql err content:'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+17-12-21 16:18:24 inster_location.py[line:82] ERROR sql err content:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\xe7\x91\xb6\xe6\xb5\xb7\xe5\x8c\xba'',''160102'',''117.317605'',''31.864492'',''\xe5\xae\x89\xe5\xbe\xbd\xe7\x9c\x81\xe5\x90\x88\xe8\x82\xa5\xe5\xb8\x82\xe7\x91\xb6\xe6\xb5\xb7' at line 1")
+17-12-21 16:19:38 inster_location.py[line:82] ERROR sql err content:invalid literal for int() with base 10: '117.317605'
+17-12-21 16:21:11 inster_location.py[line:82] ERROR sql err content:invalid literal for int() with base 10: '117.317605'
+17-12-21 16:21:26 inster_location.py[line:82] ERROR sql err content:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\xe7\x91\xb6\xe6\xb5\xb7\xe5\x8c\xba'',''160102'',''117.317605'',''31.864492'',''\xe5\xae\x89\xe5\xbe\xbd\xe7\x9c\x81\xe5\x90\x88\xe8\x82\xa5\xe5\xb8\x82\xe7\x91\xb6\xe6\xb5\xb7' at line 1")
+17-12-21 16:22:13 inster_location.py[line:82] ERROR sql err content:(1136, "Column count doesn't match value count at row 1")
+17-12-21 16:24:21 inster_location.py[line:82] ERROR sql err content:(1136, "Column count doesn't match value count at row 1")
+17-12-21 16:24:48 inster_location.py[line:82] ERROR sql err content:'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+17-12-22 10:45:07 inster_location.py[line:82] ERROR sql err content:(1366, "Incorrect integer value: '\xe5\xae\x89\xe5\xbe\xbd\xe7\x9c\x81\xe5\x90\x88\xe8\x82\xa5\xe5\xb8\x82\xe7\x91\xb6\xe6\xb5\xb7\xe5\x8c\xba102\xe5\x8f\xb7' for column 'lat' at row 1")

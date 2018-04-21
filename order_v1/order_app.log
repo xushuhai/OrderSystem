@@ -1,0 +1,66 @@
+2018-04-04 09:57:11,549 - front_controller- 32 - request endpoint : home.index
+2018-04-04 09:57:11,550 - front_controller- 33 - request url : /
+2018-04-04 09:57:11,550 - front_controller- 34 - request headers: [('Cookie', u'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjo2fQ.DZ8uAg.vhpzFHKjyPrsvb5LgWD2wNyo21k'), ('User-Agent', u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'), ('Connection', u'keep-alive'), ('Host', u'127.0.0.1:5000'), ('Upgrade-Insecure-Requests', u'1'), ('Accept', u'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'), ('Accept-Language', u'zh-CN,zh;q=0.9,en;q=0.8'), ('Accept-Encoding', u'gzip, deflate, br')]
+2018-04-04 09:57:11,550 - front_controller- 35 - request GET  data: []
+2018-04-04 09:57:11,550 - front_controller- 36 - request POST data: 
+2018-04-04 09:57:11,550 - front_controller- 37 - 
+request:GETpath:/CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([])])
+2018-04-04 09:57:11,554 - front_controller- 96 - Unhandled Exception:index.html
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xsh/PycharmProjects/my_order/order_v1/tools/wraps.py", line 84, in wrapper
+    val = f(*args, **kwargs)
+  File "/Users/xsh/PycharmProjects/my_order/order_v1/route/v1/home.py", line 30, in index
+    return render_template('index.html')
+  File "/Library/Python/2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Python/2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Python/2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Python/2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Python/2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Python/2.7/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Python/2.7/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: index.html
+2018-04-04 09:57:11,561 - response_tools- 45 - 
+Response:path: / code 1004 data None
+2018-04-04 09:59:52,462 - front_controller- 32 - request endpoint : auth.get_verifying_code
+2018-04-04 09:59:52,462 - front_controller- 33 - request url : /order/auth/verifying
+2018-04-04 09:59:52,462 - front_controller- 34 - request headers: [('Cookie', u'session=eyJ2ZXJpZnlpbmdfY29kZSI6eyIgYiI6Ik9EVXpOVFUxIn19.DRpVDA.ax7O0xij3rpW0kYpBwM-JGBh-tk'), ('Content-Length', u'27'), ('User-Agent', u'PostmanRuntime/6.4.1'), ('Connection', u'keep-alive'), ('Postman-Token', u'a437c8af-b837-474d-b657-dd8f848e024b'), ('Host', u'127.0.0.1:5000'), ('Cache-Control', u'no-cache'), ('Accept', u'*/*'), ('Content-Type', u'application/json'), ('Accept-Encoding', u'gzip, deflate')]
+2018-04-04 09:59:52,463 - front_controller- 35 - request GET  data: []
+2018-04-04 09:59:52,463 - front_controller- 36 - request POST data: {"telephone":"17621036594"}
+2018-04-04 09:59:52,463 - front_controller- 37 - 
+request:POSTpath:/order/auth/verifying{u'telephone': u'17621036594'}
+2018-04-04 09:59:52,523 - response_tools- 45 - 
+Response:path: /order/auth/verifying code 1000 data 502775
+2018-04-04 10:01:29,911 - front_controller- 32 - request endpoint : home.index
+2018-04-04 10:01:29,911 - front_controller- 33 - request url : /
+2018-04-04 10:01:29,911 - front_controller- 34 - request headers: [('Cookie', u'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjo2fQ.DZ8uAg.vhpzFHKjyPrsvb5LgWD2wNyo21k'), ('User-Agent', u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'), ('Connection', u'keep-alive'), ('Host', u'127.0.0.1:5000'), ('Upgrade-Insecure-Requests', u'1'), ('Accept', u'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'), ('Accept-Language', u'zh-CN,zh;q=0.9,en;q=0.8'), ('Accept-Encoding', u'gzip, deflate, br')]
+2018-04-04 10:01:29,912 - front_controller- 35 - request GET  data: []
+2018-04-04 10:01:29,912 - front_controller- 36 - request POST data: 
+2018-04-04 10:01:29,912 - front_controller- 37 - 
+request:GETpath:/CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([])])
+2018-04-04 10:01:30,056 - front_controller- 32 - request endpoint : None
+2018-04-04 10:01:30,056 - front_controller- 33 - request url : /favicon.ico
+2018-04-04 10:01:30,057 - front_controller- 34 - request headers: [('Referer', u'http://127.0.0.1:5000/'), ('User-Agent', u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'), ('Connection', u'keep-alive'), ('Cookie', u'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjo2fQ.DZ8uAg.vhpzFHKjyPrsvb5LgWD2wNyo21k'), ('Host', u'127.0.0.1:5000'), ('Accept', u'image/webp,image/apng,image/*,*/*;q=0.8'), ('Accept-Language', u'zh-CN,zh;q=0.9,en;q=0.8'), ('Accept-Encoding', u'gzip, deflate, br')]
+2018-04-04 10:01:30,057 - front_controller- 35 - request GET  data: []
+2018-04-04 10:01:30,057 - front_controller- 36 - request POST data: 
+2018-04-04 10:01:30,057 - front_controller- 37 - 
+request:GETpath:/favicon.icoCombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([])])
+2018-04-19 19:43:02,918 - front_controller- 32 - request endpoint : auth.get_verifying_code
+2018-04-19 19:43:02,919 - front_controller- 33 - request url : /order/auth/verifying
+2018-04-19 19:43:02,919 - front_controller- 34 - request headers: [('Cookie', u'session=eyJ2ZXJpZnlpbmdfY29kZSI6eyIgYiI6Ik9EVXpOVFUxIn19.DRpVDA.ax7O0xij3rpW0kYpBwM-JGBh-tk'), ('Content-Length', u'27'), ('User-Agent', u'PostmanRuntime/6.4.1'), ('Connection', u'keep-alive'), ('Postman-Token', u'e60855e6-6af0-4b84-b5d8-672dfd337ee7'), ('Host', u'127.0.0.1:5000'), ('Cache-Control', u'no-cache'), ('Accept', u'*/*'), ('Content-Type', u'application/json'), ('Accept-Encoding', u'gzip, deflate')]
+2018-04-19 19:43:02,919 - front_controller- 35 - request GET  data: []
+2018-04-19 19:43:02,920 - front_controller- 36 - request POST data: {"telephone":"17621036594"}
+2018-04-19 19:43:02,920 - front_controller- 37 - 
+request:POSTpath:/order/auth/verifying{u'telephone': u'17621036594'}
+2018-04-19 19:43:02,975 - response_tools- 45 - 
+Response:path: /order/auth/verifying code 1000 data 746414
